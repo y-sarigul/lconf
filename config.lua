@@ -34,8 +34,8 @@ keymap('n', 'dw', 'vb"_d', default_opts)
 keymap('n', '<C-a>', 'gg<S-v>G', default_opts)
 
 -- -- Better escape using jk in insert and terminal mode
-keymap("i", "jk", "<ESC>", default_opts)
-keymap("t", "jk", "<C-\\><C-n>", default_opts)
+keymap("i", "jj", "<ESC>", default_opts)
+keymap("t", "jj", "<C-\\><C-n>", default_opts)
 
 -- Visual line wraps
 keymap("n", "k", "v:count == 0 ? 'gk' : 'k'", expr_opts)
