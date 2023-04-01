@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = false
-lvim.colorscheme = "lunar"
+lvim.colorscheme = "vscode"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 --
@@ -27,7 +27,10 @@ local keymap = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 local expr_opts = { noremap = true, expr = true, silent = true }
 
--- Delete a word backwards
+--Telescope buffers
+keymap('n', 'sf', ':Telescope Buffers<cr>', default_opts)
+
+-- Delete a word backwardf
 keymap('n', 'dw', 'vb"_d', default_opts)
 
 -- Select all
