@@ -16,6 +16,7 @@ lvim.colorscheme = "NeoSolarized"
 -- lvim.use_icons = false
 --
 -- My optinons
+--vim.opt.guicursor = "i-ci-ve:hor30"
 vim.opt.guicursor:append("a:block")
 vim.api.nvim_win_set_option(0, 'cursorline', false)
 vim.opt.so:append("99");
